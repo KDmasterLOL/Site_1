@@ -1,0 +1,38 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+
+    padding: {
+        left: 10px;
+        right: 10px;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        font-family: $monument-font;
+        text-decoration: none;
+        color: #fff;
+        font-size: calc(13pt*(72/96));
+        position: relative;
+
+        &:hover {
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            height: 4px;
+            width: 0;
+            background-color: red;
+            transform: translate(-50%, 100%);
+            transition: all .2s;
+        }
+    }
+
+}

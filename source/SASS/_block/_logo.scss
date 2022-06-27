@@ -1,0 +1,21 @@
+.logo {
+    &__caption {
+        text-transform: uppercase;
+        font-family: $monument-font;
+        font-weight: bold;
+        font-size: 10pt;
+    }
+
+    &__figure {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    &__img {}
+
+    &__figure,
+    &__img+&__img {
+        margin-right: 3vw;
+    }
+}

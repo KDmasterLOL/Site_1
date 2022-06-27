@@ -1,0 +1,47 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    position: relative;
+
+    &__basket {
+        width: 30px;
+        height: 30px;
+
+        background: url("../svg/button_basket.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__profile {
+        width: 30px;
+        height: 30px;
+        background: url("../img/icon_profile.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__search {
+        width: 30px;
+        height: 30px;
+        background: url("../svg/button_search.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__button {
+        margin-top: min(2vh, 5px);
+    }
+
+    &__name {
+        padding-left: 20px;
+        font-size: 13px;
+        position: absolute;
+        color: white;
+        text-transform: uppercase;
+        font-family: $monument-font;
+        top: 0;
+        left: 0;
+        transform: translate(0, -100%);
+    }
+}

@@ -1,0 +1,56 @@
+.action {
+    padding: {
+        left: 2vw;
+        right: 2vw;
+    }
+
+    flex-grow: 0.6;
+    text-align: center;
+
+    &__button {
+        text-transform: uppercase;
+        border: none;
+        align-self: center;
+        font-family: $monument-font;
+        background-repeat: no-repeat;
+        font-weight: bold;
+        font-size: 80%;
+
+        padding: {
+            left: min(2vw, 30px);
+            right: min(2vw, 30px);
+            top: min(2vh, 20px);
+            bottom: min(2vh, 20px);
+        }
+
+
+        margin-right: min(1vw, 10px);
+
+        transition: background 0.5s;
+
+        &--black {
+            @extend .action__button;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+
+            &:hover {
+                background-color: white;
+                color: black;
+                border-color: black;
+            }
+
+        }
+
+        &--white {
+            @extend .action__button;
+            background-color: white;
+            color: black;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}

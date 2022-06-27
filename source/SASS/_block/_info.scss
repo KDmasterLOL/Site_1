@@ -1,0 +1,38 @@
+.info {
+    font-family: $monument-font;
+    color: white;
+    max-width: 333px;
+
+    &--product {
+        position: absolute;
+        top: -5vh;
+        right: 15vw;
+    }
+
+    &__cost {}
+
+    &__mark {
+        &--exclusive {}
+    }
+
+    &__series {}
+
+
+    &__name {}
+
+    &__text {
+        font-size: 80%;
+        margin-top: 0;
+    }
+
+    &__inspiration {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+
+        &::after {
+            content: "inspiration";
+            font-weight: bold;
+            font-size: 70%;
+        }
+    }
+}
